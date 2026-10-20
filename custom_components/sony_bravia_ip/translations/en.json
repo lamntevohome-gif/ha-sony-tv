@@ -1,0 +1,136 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sony Bravia TV",
+        "description": "On the TV: Settings → Network → Home network → IP control → Authentication = 'Normal and Pre-Shared Key', set a Pre-Shared Key, and enable Remote start.",
+        "data": {
+          "host": "IP address",
+          "psk": "Pre-Shared Key",
+          "name": "Name"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Enter new Pre-Shared Key",
+        "data": {
+          "psk": "Pre-Shared Key"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure TV",
+        "data": {
+          "host": "IP address",
+          "psk": "Pre-Shared Key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the TV. Check IP and that it is on the network.",
+      "invalid_auth": "Pre-Shared Key rejected."
+    },
+    "abort": {
+      "already_configured": "This TV is already configured.",
+      "reauth_successful": "Re-authentication successful.",
+      "reconfigure_successful": "Reconfiguration successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "data": {
+          "scan_interval": "Polling interval (seconds)",
+          "sources": "Sources shown in source list (empty = all)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "remote": {
+      "remote": {
+        "name": "Remote"
+      }
+    },
+    "select": {
+      "source": {
+        "name": "Source"
+      },
+      "picture_mode": {
+        "name": "Picture mode"
+      },
+      "sound_output": {
+        "name": "Sound output"
+      }
+    },
+    "button": {
+      "home": {
+        "name": "Home"
+      },
+      "back": {
+        "name": "Back"
+      },
+      "input": {
+        "name": "Input"
+      },
+      "options": {
+        "name": "Options"
+      },
+      "netflix": {
+        "name": "Netflix"
+      },
+      "guide": {
+        "name": "Guide"
+      }
+    }
+  },
+  "services": {
+    "launch_app": {
+      "name": "Launch app",
+      "description": "Launch an app by title or URI.",
+      "fields": {
+        "app": {
+          "name": "App",
+          "description": "App title (e.g. YouTube) or URI"
+        }
+      }
+    },
+    "play_content": {
+      "name": "Play content",
+      "description": "Switch to an input/channel by URI.",
+      "fields": {
+        "uri": {
+          "name": "URI",
+          "description": "extInput:hdmi?port=1, tv:dvbt?trip=..."
+        }
+      }
+    },
+    "set_picture_setting": {
+      "name": "Set picture setting",
+      "description": "Change a picture quality setting.",
+      "fields": {
+        "target": {
+          "name": "Target",
+          "description": "pictureMode, brightness, contrast, color..."
+        },
+        "value": {
+          "name": "Value",
+          "description": "Value"
+        }
+      }
+    },
+    "set_sound_setting": {
+      "name": "Set sound setting",
+      "description": "Change a sound setting.",
+      "fields": {
+        "target": {
+          "name": "Target",
+          "description": "outputTerminal, soundMode..."
+        },
+        "value": {
+          "name": "Value",
+          "description": "Value"
+        }
+      }
+    }
+  }
+}

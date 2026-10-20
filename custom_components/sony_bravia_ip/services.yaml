@@ -1,0 +1,57 @@
+launch_app:
+  target:
+    entity:
+      integration: sony_bravia_ip
+      domain: media_player
+  fields:
+    app:
+      required: true
+      example: "YouTube"
+      selector:
+        text:
+
+play_content:
+  target:
+    entity:
+      integration: sony_bravia_ip
+      domain: media_player
+  fields:
+    uri:
+      required: true
+      example: "extInput:hdmi?port=3"
+      selector:
+        text:
+
+set_picture_setting:
+  target:
+    entity:
+      integration: sony_bravia_ip
+      domain: media_player
+  fields:
+    target:
+      required: true
+      example: "brightness"
+      selector:
+        text:
+    value:
+      required: true
+      example: "40"
+      selector:
+        text:
+
+set_sound_setting:
+  target:
+    entity:
+      integration: sony_bravia_ip
+      domain: media_player
+  fields:
+    target:
+      required: true
+      example: "outputTerminal"
+      selector:
+        text:
+    value:
+      required: true
+      example: "speaker"
+      selector:
+        text:

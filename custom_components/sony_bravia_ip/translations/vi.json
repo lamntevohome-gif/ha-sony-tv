@@ -1,0 +1,136 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tivi Sony Bravia",
+        "description": "Trên tivi: Cài đặt → Mạng → Mạng gia đình → Điều khiển IP → Xác thực = 'Bình thường và Khóa chia sẻ trước', đặt Khóa chia sẻ trước (PSK) và bật Khởi động từ xa.",
+        "data": {
+          "host": "Địa chỉ IP",
+          "psk": "Khóa chia sẻ trước (PSK)",
+          "name": "Tên"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Nhập lại PSK",
+        "data": {
+          "psk": "Khóa chia sẻ trước (PSK)"
+        }
+      },
+      "reconfigure": {
+        "title": "Cấu hình lại tivi",
+        "data": {
+          "host": "Địa chỉ IP",
+          "psk": "Khóa chia sẻ trước (PSK)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Không kết nối được tivi. Kiểm tra IP và tivi đang ở trong mạng.",
+      "invalid_auth": "PSK không đúng."
+    },
+    "abort": {
+      "already_configured": "Tivi này đã được cấu hình.",
+      "reauth_successful": "Xác thực lại thành công.",
+      "reconfigure_successful": "Cấu hình lại thành công."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Tùy chọn",
+        "data": {
+          "scan_interval": "Chu kỳ cập nhật (giây)",
+          "sources": "Nguồn hiển thị trong danh sách (để trống = tất cả)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "remote": {
+      "remote": {
+        "name": "Điều khiển"
+      }
+    },
+    "select": {
+      "source": {
+        "name": "Nguồn"
+      },
+      "picture_mode": {
+        "name": "Chế độ hình ảnh"
+      },
+      "sound_output": {
+        "name": "Đầu ra âm thanh"
+      }
+    },
+    "button": {
+      "home": {
+        "name": "Home"
+      },
+      "back": {
+        "name": "Quay lại"
+      },
+      "input": {
+        "name": "Input"
+      },
+      "options": {
+        "name": "Options"
+      },
+      "netflix": {
+        "name": "Netflix"
+      },
+      "guide": {
+        "name": "Guide"
+      }
+    }
+  },
+  "services": {
+    "launch_app": {
+      "name": "Mở ứng dụng",
+      "description": "Mở ứng dụng theo tên hoặc URI.",
+      "fields": {
+        "app": {
+          "name": "App",
+          "description": "Tên ứng dụng (vd: YouTube) hoặc URI"
+        }
+      }
+    },
+    "play_content": {
+      "name": "Phát nội dung",
+      "description": "Chuyển sang cổng/kênh theo URI.",
+      "fields": {
+        "uri": {
+          "name": "URI",
+          "description": "extInput:hdmi?port=1, tv:dvbt?trip=..."
+        }
+      }
+    },
+    "set_picture_setting": {
+      "name": "Chỉnh hình ảnh",
+      "description": "Thay đổi một thiết lập hình ảnh.",
+      "fields": {
+        "target": {
+          "name": "Target",
+          "description": "pictureMode, brightness, contrast, color..."
+        },
+        "value": {
+          "name": "Value",
+          "description": "Giá trị"
+        }
+      }
+    },
+    "set_sound_setting": {
+      "name": "Chỉnh âm thanh",
+      "description": "Thay đổi một thiết lập âm thanh.",
+      "fields": {
+        "target": {
+          "name": "Target",
+          "description": "outputTerminal, soundMode..."
+        },
+        "value": {
+          "name": "Value",
+          "description": "Giá trị"
+        }
+      }
+    }
+  }
+}

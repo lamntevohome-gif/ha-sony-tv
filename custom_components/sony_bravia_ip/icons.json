@@ -1,0 +1,23 @@
+{
+  "entity": {
+    "select": {
+      "source": {"default": "mdi:import"},
+      "picture_mode": {"default": "mdi:image-edit"},
+      "sound_output": {"default": "mdi:speaker"}
+    },
+    "button": {
+      "home": {"default": "mdi:home"},
+      "back": {"default": "mdi:arrow-left"},
+      "input": {"default": "mdi:import"},
+      "options": {"default": "mdi:dots-vertical"},
+      "netflix": {"default": "mdi:netflix"},
+      "guide": {"default": "mdi:television-guide"}
+    }
+  },
+  "services": {
+    "launch_app": {"service": "mdi:apps"},
+    "play_content": {"service": "mdi:play-box"},
+    "set_picture_setting": {"service": "mdi:image-edit"},
+    "set_sound_setting": {"service": "mdi:volume-high"}
+  }
+}
